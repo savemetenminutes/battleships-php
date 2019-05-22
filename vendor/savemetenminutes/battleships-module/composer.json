@@ -1,0 +1,44 @@
+{
+  "name": "savemetenminutes/battleships-module",
+  "description": "The Battleships App Module",
+  "type": "library",
+  "keywords": [
+    "savemetenminutes",
+    "battleships",
+    "module"
+  ],
+  "homepage": "",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Milen Kirilov",
+      "email": "savemetenminutes@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7",
+  },
+  "autoload": {
+    "psr-4": {
+      "Smtm\\BattleShips\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "vendor-dir": "../../"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Helden\\NvExtraZuersApiInterface\\ApiConsumer\\Providers\\ServiceProvider"
+      ],
+      "aliases": {
+
+      }
+    }
+  }
+}
